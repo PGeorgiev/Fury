@@ -1,0 +1,2 @@
+# Fury
+WordPress theme 
