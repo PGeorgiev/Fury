@@ -1,6 +1,6 @@
 * {
- margin: 0; 
- padding: 0; 
+ margin: 0;
+ padding: 0;
 }
 
 html {
@@ -111,7 +111,7 @@ a:hover {
 	overflow: hidden;
 }
 
-nav div {} 
+nav div {}
 nav div ul {
     margin: 0;
     padding: 0;
@@ -333,7 +333,7 @@ th {
 }
 
 .site-content,
-.site-footer,
+/*.site-footer,*/
 .comments-area,
 .post-navigation,
 .hentry + .hentry { border-top: solid 1px #CCC; padding-top: 2em; margin-top: 2em; }
@@ -374,8 +374,16 @@ img {
 }
 
 .site-footer {
-	background: #E2E2E2;
+	background: #2d3846;
+  padding: 40px 0;
+  text-align: center;
+  margin: 25px;
 }
+
+.site-footer a {
+  background-color: white;
+}
+
 
 .site-info p {
 	text-align: center;
@@ -421,4 +429,23 @@ img {
 .comments-link {
     padding: 8px;
     border-bottom: 1px solid black;
+}
+
+
+.nav-previous {
+  float: left;
+  border-bottom: 1px solid black;
+  border-right: 1px solid red;
+  padding-right: 5px;
+}
+
+.nav-next {
+  float: right;
+  border-bottom: 1px solid black;
+  /*transform: rotate(-10deg); /* Standard syntax */
+}
+
+
+.tags-links {
+  background-color: yellow;
 }
