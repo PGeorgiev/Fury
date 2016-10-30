@@ -1,6 +1,6 @@
 === Fury ===
 
-Contributors: automattic
+Contributors: automattic, Plamen Georgiev (testing)
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
 Requires at least: 4.0
