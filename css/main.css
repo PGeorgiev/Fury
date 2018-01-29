@@ -111,143 +111,68 @@ a:hover {
 	overflow: hidden;
 }
 
-nav div {}
-nav div ul {
-    margin: 0;
-    padding: 0;
-}
-nav div ul:after {
-    display: block;
-    content: '';
-    height: 1px;
-    clear: both;
-}
-nav div ul li {
-    display: block;
-    list-style: none outside;
-    position: relative;
-}
-nav div > ul {} nav div > ul ul {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-}
-nav div > ul > li {
-    margin-right: 5px;
-}
-nav div li:hover > ul {
-    display: block;
-}
-nav div > ul {} nav div > ul > li {
-    float: left;
-}
-nav div > ul > li > a {
-    border-radius: 6px;
-}
-nav div > ul > li ul {
-    padding: 5px 0 0 0;
-    width: 140px;
-}
-nav div > ul > li li:first-child a {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-}
-nav div > ul > li li:last-child a {
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-}
-nav div > ul > li > ul > li ul {
-    left: 100%;
-    top: 0;
-    padding: 0 0 0 5px;
-}
-nav div > ul > li {
-    float: left;
-}
-nav div ul li a {
-    display: block;
-    background: #01B6AD;
-    color: #FFF;
-    padding: 5px 10px;
-}
-nav div ul li a:hover {
-    background: #030;
+nav {
+	margin: 50px 0;
+	background-color: #E64A19;
 }
 
-form {
-    border: 1px solid #CCC;
-    padding: 2em;
-}
-form input,
-form textarea,
-form select,
-form label {
-    display: block;
-    width: 230px;
-}
-form label {
-    font-weight: bold;
-}
-form input,
-form textarea {
-    border: 1px solid #CCC;
-    width: 100%;
-    border-radius: 4px;
-    padding: 0.2em 0.5em;
-}
-form input:focus,
-form input:focus + .error,
-form textarea:focus + .error {
-    display: none;
-}
-#submit {
-    display: block;
-    background: #01B6AD;
-    color: #FFF;
-    cursor: pointer;
-    border: 0;
-    padding: 0.4em;
-}
-#submit:hover {
-    background: #030;
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #E64A19;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
 }
 
+nav a:hover { 
+	background-color: #000000; 
+}
 
-blockquote {
-    position: relative;
-    padding: 1em;
-    margin: 0 4em 0 2em;
-    font-style: italic;
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
 }
-blockquote:before {
-    content: '‟';
-    position: absolute;
-    top: 0.1em;
-    left: -0.5em;
-    font-size: 5em;
-    line-height: 1em;
-    color: #CCC;
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
 }
-ul,
-ol {
-    padding-left: 1.5em;
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
 }
-li {
-    list-style-position: outside;
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
 }
-ul li {
-    list-style-type: none;
-    background-color: yellow;
-}
-ul li ul li {
-    list-style-type: circle;
-}
-ul li ul li ul li {
-    list-style-type: square;
-}
-ol li {
-    list-style-type: decimal;
+
+	
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
 }
 ol li ol li {
     list-style-type: upper-roman;
