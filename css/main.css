@@ -345,6 +345,7 @@ img {
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, .16);
     padding-bottom: 20px;
     padding-top: 20px;
+    padding: 20px;
 }
 
 .entry-meta {
@@ -373,4 +374,8 @@ img {
 
 .tags-links {
   background-color: yellow;
+}
+
+.search-submit {
+    background: red;
 }
