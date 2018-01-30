@@ -84,10 +84,10 @@ body {
 	background: fixed;
 }
 
-a { color: black; }
-a:hover {
-	color: #01b6ad;
+a { 
+    color: black; 
 }
+
 
 .site-header, .site-content {
 	 background: #E2E2E2;
@@ -113,7 +113,8 @@ a:hover {
 
 nav {
 	margin: 50px 0;
-	background-color: #E64A19;
+    background-color: black; 
+    /* background-color: #fff; */
 }
 
 nav ul {
@@ -125,7 +126,8 @@ nav ul {
 
 nav ul li {
 	display:inline-block;
-	background-color: #E64A19;
+    /* background-color: #E64A19; */
+    background-color: black;
 	}
 
 nav a {
@@ -138,7 +140,7 @@ nav a {
 }
 
 nav a:hover {
-	background-color: #000000;
+	background-color: #E64A19;
 }
 
 /* Hide Dropdowns by Default */
@@ -324,19 +326,18 @@ img {
     float: right;
 }
 
-.site-description {
+/* .site-description {
     text-align: center;
-}
+} */
 
 .widget-title {
     background-color: black;
     color: white;
-    border-bottom: 1px solid black;
     cursor: pointer;
     text-align: center;
 }
 
-.widget-area .widget {
+ .widget {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
@@ -348,6 +349,7 @@ img {
     padding-bottom: 20px;
     padding-top: 20px;
     padding: 20px;
+    border: 1px solid rgb(179, 179, 179);
 }
 
 .entry-meta {
@@ -362,22 +364,29 @@ img {
 
 .nav-previous {
   float: left;
+  color: black;
   border-bottom: 1px solid black;
-  border-right: 1px solid red;
   padding-right: 5px;
 }
 
 .nav-next {
   float: right;
+  color: black;
   border-bottom: 1px solid black;
   /*transform: rotate(-10deg); /* Standard syntax */
 }
 
 
-.tags-links {
-  background-color: yellow;
-}
+
 
 .search-submit {
-    background: red;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 100px;
+}
+
+.search-submit:hover {
+    color: #E64A19;
+    background: #2d3846; 
+    cursor: pointer;
 }
