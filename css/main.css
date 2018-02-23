@@ -349,7 +349,7 @@ img {
     padding-bottom: 20px;
     padding-top: 20px;
     padding: 20px;
-    border: 1px solid rgb(179, 179, 179);
+    /*border: 1px solid rgb(179, 179, 179);*/
 }
 
 .entry-meta {
