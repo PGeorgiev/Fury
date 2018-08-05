@@ -4,11 +4,11 @@
 }
 
 html {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *, *:before, *:after {
-	box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body,
@@ -76,12 +76,12 @@ h6 + p {} h1 + p {
 .screen-reader-text,
 .menu-toggle,
 .skip-link {
-	display: none;
+    display: none;
 }
 
 body {
-	background: #FFF;
-	background: fixed;
+    background: #FFF;
+    background: fixed;
 }
 
 a { 
@@ -90,84 +90,85 @@ a {
 
 
 .site-header, .site-content {
-	 background: #E2E2E2;
+     background: #E2E2E2;
 }
 
 .site {
-	width: 80%;
-	margin: 20px auto;
-	padding: 20px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 .site-header {
-	padding: 20px; margin-bottom: 20px;
+    padding: 70px;
+    margin-bottom: 20px;
 }
 
 .site-footer {
-	padding: 20px; margin-top: 20px;
+    padding: 20px; margin-top: 20px;
 }
 
 .site-content, #main {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 nav {
-	margin: 50px 0;
+    margin: 10px 0;
     background-color: black; 
     /* background-color: #fff; */
 }
 
 nav ul {
-	padding: 0;
-  margin: 0;
-	list-style: none;
-	position: relative;
-	}
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
 
 nav ul li {
-	display:inline-block;
+    display:inline-block;
     /* background-color: #E64A19; */
     background-color: black;
-	}
+}
 
 nav a {
-	display:block;
-	padding:0 10px;
-	color:#FFF;
-	font-size:20px;
-	line-height: 60px;
-	text-decoration:none;
+    display:block;
+    padding:0 10px;
+    color:#FFF;
+    font-size:20px;
+    line-height: 60px;
+    text-decoration:none;
 }
 
 nav a:hover {
-	background-color: #E64A19;
+    background-color: #E64A19;
 }
 
 /* Hide Dropdowns by Default */
 nav ul ul {
-	display: none;
-	position: absolute;
-	top: 60px; /* the height of the main nav */
+    display: none;
+    position: absolute;
+    top: 60px; /* the height of the main nav */
 }
 
 /* Display Dropdowns on Hover */
 nav ul li:hover > ul {
-	display:inherit;
+    display:inherit;
 }
 
 /* Fisrt Tier Dropdown */
 nav ul ul li {
-	width:170px;
-	float:none;
-	display:list-item;
-	position: relative;
+    width:220px;
+    float:none;
+    display:list-item;
+    position: relative;
 }
 
-/* Second, Third and more Tiers	*/
+/* Second, Third and more Tiers */
 nav ul ul ul li {
-	position: relative;
-	top:-60px;
-	left:170px;
+    position: relative;
+    top:-60px;
+    left:170px;
 }
 
 
@@ -219,32 +220,32 @@ th {
 }
 
 #primary, #secondary {
-	padding: 20px;
-	float: left;
+    padding: 20px;
+    float: left;
 }
 
 #primary {
-	width: 70%;
+    width: 70%;
 }
 
 #secondary {
-	width: 30%;
+    width: 30%;
 }
 
 .widget {
-	padding-bottom: 1em;
+    padding-bottom: 1em;
 }
 
 .sticky,
 .gallery-caption {
-	display: block;
+    display: block;
 }
 .bypostauthor .comment-content p {
     color: #2d2824;
 }
 
 .bypostauthor > .comment-body {
-	display: block;
+    display: block;
     position: relative;
     padding: 1em;
     margin-bottom: 2em;
@@ -254,9 +255,9 @@ th {
     border-radius: 5px;
 }
 .aligncenter {
-	clear: both;
-	display: block;
-	margin: 0 auto;
+    clear: both;
+    display: block;
+    margin: 0 auto;
 }
 
 .site-content,
@@ -275,22 +276,22 @@ th {
 }
 
 .wp-caption {
-	margin-bottom: 1.5em;
-	max-width: 100%;
-	background: #d6cebf;
+    margin-bottom: 1.5em;
+    max-width: 100%;
+    background: #d6cebf;
 }
 
 .wp-caption img[class*="wp-image-"] {
-	display: block;
-	margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
 img {
-	height: auto;
-	max-width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 .wp-caption-text {
-	text-align: center;
+    text-align: center;
 }
 
 .wp-caption .wp-caption-text {
@@ -301,7 +302,7 @@ img {
 }
 
 .site-footer {
-	background: #2d3846;
+    background: #2d3846;
   padding: 40px 0;
   text-align: center;
   margin: 25px;
@@ -313,22 +314,15 @@ img {
 
 
 .site-info p {
-	text-align: center;
-	color: black;
-	font-size: 15px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
 }
 
 .site-info a {
-	color: #222222;
+    color: #222222;
 }
 
-.site-title {
-    float: right;
-}
-
-/* .site-description {
-    text-align: center;
-} */
 
 .widget-title {
     background-color: black;
@@ -360,7 +354,11 @@ img {
     padding: 8px;
     border-bottom: 1px solid black;
 }
+/* Nav links */
 
+.nav-links a{
+    color: black;
+}
 
 .nav-previous {
   float: left;
@@ -390,3 +388,25 @@ img {
     background: #2d3846; 
     cursor: pointer;
 }
+
+#submit {
+    background-color: #E64A19; /* Green */
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
